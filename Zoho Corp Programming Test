@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	int len=5, i=0,j=0, cnt=1, k=0;
+	for(i=len ;i>=0;i--){ 
+		for(j=0;j<i;j++){
+			printf("  ");
+		}
+		for(j=0;j<len-i;j++){
+			printf("%d ",cnt++);
+		}
+		printf("\n");
+	}
+	
+
+	return 0;
+}
